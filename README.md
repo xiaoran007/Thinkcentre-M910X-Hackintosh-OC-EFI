@@ -1,7 +1,64 @@
 # Thinkcentre-M910X-Hackintosh-OC-EFI
 ## OpenCore version 0.9.5
 
-images and install guid will be uploaded after all testing is complete.
+Full images and install guid will be uploaded after all testing is complete.
+
+# Change System code(SSN,UUID,ROM) FIRST.
+# 务必修改三码(SSN,UUID,ROM)
+
+## Suggestion | 建议
+如果你的m910x主机是独显版本，请优先考虑使用iMac版的EFI，参阅1.2 章节。如果你不想使用独立显卡，可使用Mac mini版EFI（1.1章节），该版本EFI已默认屏蔽独立显卡，请在BIOS中设置主显示输出为核显。
+
+如果你的m910x主机是无独显的版本（通常搭配2.5寸硬盘出售），则只能使用Mac mini版的EFI，参阅1.1章节。如果你想使用独显，可以购买免驱显卡自行安装并使用iMac版EFI（1.2章节）替换当前EFI。
+
+## compatibilities ｜ 兼容性
+EFI基于m910x测试功能完备，如需了解测试时使用的完整硬件信息，请参阅1.1和1.2章节中的硬件部分。
+
+使用Q270主板 + 7代处理器的设备理论上均可直接使用EFI引导而不需要专门设置，如使用intel无线网卡请添加相关驱动。
+
+## operational state ｜ 运行状态
+### Work：
+
+- Mini DP ports on RX460  
+- HiDpi with 4K output
+- Audio output on DP  
+- All USB ports  
+- Wi-Fi & Bluetooth  
+- 3.5mm Audio Jack and Internal Mic
+- Airdrop  
+- AirPlay  
+- Continuity  
+- QE/CI of Intel UHD 630 & rx460
+- CPU Power Management
+- Sleep 
+
+### Not working:
+
+- None
+
+### Not tested yet:
+
+- None 
+
+### some imgs:
+
+#### device information | 设备信息
+![device info](./imgs/iMac/device%20info.png)
+
+#### HiDpi and Sidecar | HiDpi和随航
+![HiDpi](./imgs/iMac/HiDPI.png)
+
+#### Bluetooth | 蓝牙
+![bluetooth](./imgs/iMac/bluetooth.png)
+
+#### Airdrop | 隔空投送
+![airdrop](./imgs/iMac/airdrop.png)
+
+#### dGPU ｜ 独立显卡
+![GPU](./imgs/iMac/gpu.png)
+
+#### GPUs | 独立和集成显卡
+![iGpu and dGPU](./imgs/iMac/igpu.png)
 
 ## 0. File index | 文件索引
 
@@ -64,4 +121,4 @@ iMac 2017, 5K. 7 gen core desktop  CPU whit amd rx5x0 dGPU.
 * 核显设置为仅计算，独立显卡为RX460，与RX560为马甲关系，macOS免驱
 
 ### Test ｜ 测试
-in dev.
+Pass.
