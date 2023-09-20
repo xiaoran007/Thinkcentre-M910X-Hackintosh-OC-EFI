@@ -1,15 +1,35 @@
 # Thinkcentre-M910X-Hackintosh-OC-EFI
 ## OpenCore version 0.9.5
+[![macOS](https://img.shields.io/badge/macOS-Monterey-brightgreen.svg)](https://developer.apple.com/documentation/macos-release-notes)
+[![macOS](https://img.shields.io/badge/macOS-Ventura-brightgreen.svg)](https://developer.apple.com/documentation/macos-release-notes)
+[![macOS](https://img.shields.io/badge/macOS-Sonoma-brightgreen.svg)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.5-blue)](https://github.com/acidanthera/OpenCorePkg)
+
+
 
 Full images and install guid will be uploaded after all testing is complete.
 
-# Change System code(SSN,UUID,ROM) FIRST.
-# 务必修改三码(SSN,UUID,ROM)
+# ⚠️ Change System code(SSN,UUID,ROM) FIRST.
+# ⚠️ 务必修改三码(SSN,UUID,ROM)
+
+# index | 索引
+- [Suggestion | 建议](#suggestion--建议)
+- [compatibilities ｜ 兼容性](#compatibilities--兼容性)
+- [operational state ｜ 运行状态](#operational-state--运行状态)
+    * [Working](#working)
+    * [Not working](#not-working)
+    * [Not tested yet](#not-tested-yet)
+- [0. File index | 文件索引](#0-file-index--文件索引)
+- [1. Hackintosh type | 设备类型](#1-hackintosh-type--设备类型)
+    * [1.1 Macmini 8, 1](#11-macmini-8-1)
+    * [1.2 iMac 18, 3](#12-imac-18-3)
+- [2. Installation guideline | 安装指引](#2-installation-guideline--安装指引)
+
 
 ## Suggestion | 建议
-如果你的m910x主机是独显版本，请优先考虑使用iMac版的EFI，参阅1.2 章节。如果你不想使用独立显卡，可使用Mac mini版EFI（1.1章节），该版本EFI已默认屏蔽独立显卡，请在BIOS中设置主显示输出为核显。
+如果你的m910x主机是独显版本，请优先考虑使用iMac版的EFI，参阅[1.2章节](#12-imac-18-3)。如果你不想使用独立显卡，可使用Mac mini版EFI（[1.1章节](#11-macmini-8-1)），该版本EFI已默认屏蔽独立显卡，请在BIOS中设置主显示输出为核显。
 
-如果你的m910x主机是无独显的版本（通常搭配2.5寸硬盘出售），则只能使用Mac mini版的EFI，参阅1.1章节。如果你想使用独显，可以购买免驱显卡自行安装并使用iMac版EFI（1.2章节）替换当前EFI。
+如果你的m910x主机是无独显的版本（通常搭配2.5寸硬盘出售），则只能使用Mac mini版的EFI，参阅[1.1章节](#11-macmini-8-1)。如果你想使用独显，可以购买免驱显卡自行安装并使用iMac版EFI（[1.2章节](#12-imac-18-3)）替换当前EFI。
 
 ## compatibilities ｜ 兼容性
 EFI基于m910x测试功能完备，如需了解测试时使用的完整硬件信息，请参阅1.1和1.2章节中的硬件部分。
@@ -17,7 +37,7 @@ EFI基于m910x测试功能完备，如需了解测试时使用的完整硬件信
 使用Q270主板 + 7代处理器的设备理论上均可直接使用EFI引导而不需要专门设置，如使用intel无线网卡请添加相关驱动。
 
 ## operational state ｜ 运行状态
-### Work：
+### Working：
 
 - Mini DP ports on RX460  
 - HiDpi with 4K output
@@ -62,12 +82,10 @@ EFI基于m910x测试功能完备，如需了解测试时使用的完整硬件信
 
 ## 0. File index | 文件索引
 
-|    Dir / 目录                 | Note / 备注               | 
-| ------------------- |:---------------------------------:|
-| MacMini with iGPU     |    Macmini 8,1 EFI   |    
-| iMac with dGPU     | iMac 18,3 EFI                 |    
-
-
+| Dir / 目录               | Description / 描述                                                              | Type / 类型     |
+| ----------------- | ------------------------------------------------------------------------- | --------- |
+| `MacMini with iGPU/EFI`             | Supports macOS Monterey, Ventura & Sonoma(tested in Ventura)            | `Macmini 8,1 EFI`  |
+| `iMac with dGPU/EFI`  | Supports macOS Monterey, Ventura & Sonoma(tested in Ventura)         | `iMac 18,3 EFI`  |
 
 ---
 
@@ -122,3 +140,9 @@ iMac 2017, 5K. 7 gen core desktop  CPU whit amd rx5x0 dGPU.
 
 ### Test ｜ 测试
 Pass.
+
+## 2. Installation guideline | 安装指引
+in dev.
+
+## 3. Reference | 参考
+in dev.
