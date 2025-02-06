@@ -5,9 +5,9 @@
 [![macOS](https://img.shields.io/badge/macOS-Sonoma-brightgreen.svg)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.9.5-blue)](https://github.com/acidanthera/OpenCorePkg)
 
+**这个EFI在OC 0.9.5 与 macOS 13.5.2稳定工作超过1.5年！**
 
-
-Full images and install guid will be uploaded after all testing is complete.
+**This EFI has worked stably for over 1.5 years with OC 0.9.5 and macOS 13.5.2！**
 
 # ⚠️ Change System code(SSN,UUID,ROM) FIRST.
 # ⚠️ 务必修改三码(SSN,UUID,ROM)
@@ -31,10 +31,18 @@ Full images and install guid will be uploaded after all testing is complete.
 
 如果你的m910x主机是无独显的版本（通常搭配2.5寸硬盘出售），则只能使用Mac mini版的EFI，参阅[1.1章节](#11-macmini-8-1)。如果你想使用独显，可以购买免驱显卡自行安装并使用iMac版EFI（[1.2章节](#12-imac-18-3)）替换当前EFI。
 
+If your m910x has a discrete GPU, please prioritize using the iMac version of EFI, see [section 1.2](#12-imac-18-3). If you don't want to use discrete GPU, you can use the Mac mini version of EFI ([Section 1.1](#11-macmini-8-1)), which has blocked the discrete graphics card by default, please set the main display output to iGPU in BIOS.
+
+If your m910x doesn't have discrete graphics (usually sold with a 2.5” hard disk), you can only use the Mac mini version of EFI, see [section 1.1](#11-macmini-8-1). If you want to use a dGPU, you can buy a drive-free graphics card and install it yourself and replace the current EFI with the iMac version of the EFI ([Section 1.2](#12-imac-18-3)).
+
 ## compatibilities ｜ 兼容性
 EFI基于m910x测试功能完备，如需了解测试时使用的完整硬件信息，请参阅1.1和1.2章节中的硬件部分。
 
 使用Q270主板 + 7代处理器的设备理论上均可直接使用EFI引导而不需要专门设置，如使用intel无线网卡请添加相关驱动。
+
+EFI is fully functional based on the test, for complete information on the hardware used in the test, please refer to the hardware section in sections 1.1 and 1.2.
+
+Devices using Q270 motherboards + 7th generation processors can theoretically boot directly with this EFI without special setup, but if using an intel wireless card, please add the relevant drivers.
 
 ## operational state ｜ 运行状态
 ### Working：
